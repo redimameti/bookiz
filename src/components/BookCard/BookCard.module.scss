@@ -1,0 +1,97 @@
+@import "./../../assets/palette.scss";
+@import "./../../assets/fonts.scss";
+
+.CardWrapper {
+	background-color: $light;
+	width: 265px;
+  min-height: 585px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+  text-align: left;
+	border-radius: 15px;
+  margin-bottom: 50px;
+
+	&__ImgContainer {
+		width: 90%;
+		margin-top: 12.5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $sans-serif;
+    color: $light;
+    
+    &__Img {
+      width: 100%;
+      border-radius: 15px;
+      display: block;
+    }
+
+    &__Overlay {
+      background-color: $dark-transparent;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: 0;
+      top: 0;
+      border-radius: 15px;
+      opacity: 0;
+    }
+	}
+
+	&__ImgContainer:hover &__ImgContainer__Overlay {
+      opacity: 1;
+      cursor: pointer;
+      transition: .2s ease;
+	}
+
+  &__TitleAndAuthor {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+	h3 {
+		font-family: $serif;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 18px;
+	}
+  
+  &__Author {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-top: 0px;
+    
+  }
+
+  &__DescWrap {
+    width: 90%;
+    // text-align: left;
+    font-family: $sans-serif;
+
+    &__Text {
+      font-size: 14px;
+
+      &__Link {
+        text-decoration: none;
+        color: $dark;
+
+        &__Ul {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "./../../assets/palette.scss";
+@import "./../../assets/fonts.scss";
+
+.BookList {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 90%;
+	max-width: 1250px;
+}
+
+@media screen and (max-width: 588px) {
+	.BookList {
+		justify-content: center;
+	}
+}

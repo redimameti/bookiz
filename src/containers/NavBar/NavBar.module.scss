@@ -1,0 +1,67 @@
+@import "./../../assets/palette.scss";
+@import "./../../assets/fonts.scss";
+
+.NavBar {
+	background-color: $mid-green;
+	width: 90%;
+	max-width: 1250px;
+	display: flex;
+	margin: 25px 0px;
+	border-radius: 15px;
+	border: 5px solid $light;
+	display: flex;
+	justify-content: space-between;
+	&__Header {
+    font-family: $header-font;
+		padding: 0px;
+		margin-left: 15px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 150px;
+		height: 65px;
+    color: $light;
+    text-decoration: none;
+
+		h1 {
+			margin: 0px;
+			font-size: 2em;
+		}
+	}
+
+	&__Links {
+		width: 225px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		margin-right: 15px;
+
+		&__LogIn,
+		&__SignUp {
+			text-decoration: none;
+			font-family: $sans-serif;
+			font-weight: 600;
+			width: 80px;
+			padding: 10px;
+			border-radius: 10px;
+			cursor: not-allowed;
+		}
+		&__LogIn {
+			background-color: $dark-green;
+			color: $light;
+		}
+		&__SignUp {
+			background-color: $light;
+			color: $salmon;
+		}
+	}
+
+	@media screen and (max-width: 520px) {
+		.NavBar {
+			&__Links {
+				display: none;
+			}
+		}
+	}
+}
