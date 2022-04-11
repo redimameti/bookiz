@@ -1,7 +1,9 @@
 import styles from "./BookCard.module.scss";
 
 const BookCard = ({book}) => {
-	const image = book.volumeInfo.imageLinks.thumbnail;
+	const image = book.volumeInfo.imageLinks?.thumbnail
+		? book.volumeInfo.imageLinks.thumbnail
+		: "https://bookstoreromanceday.org/wp-content/uploads/2020/08/book-cover-placeholder.png";
 
 	const title = book.volumeInfo.title
 		? book.volumeInfo.title
@@ -16,7 +18,7 @@ const BookCard = ({book}) => {
 		: "Sorry, there is no description for this title.";
 
 	if (description.length > 145) {
-		description = `${description.slice(0, 145)}...Read More.`;
+		description = `${description.slice(0, 145)}`;
 	}
 
 	return (
@@ -39,10 +41,10 @@ const BookCard = ({book}) => {
 			<div className={styles.CardWrapper__DescWrap}>
 				<p className={styles.CardWrapper__DescWrap__Text}>
 					{description}
-					{/* <a
+					<a
 						className={styles.CardWrapper__DescWrap__Text__Link}
 						href="">
-						...{" "}
+						...
 						<span
 							className={
 								styles.CardWrapper__DescWrap__Text__Link__Ul
@@ -50,8 +52,8 @@ const BookCard = ({book}) => {
 							Read More
 						</span>
 						.
-					</a> */}
-          </p>
+					</a>
+				</p>
 			</div>
 		</div>
 	);

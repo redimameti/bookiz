@@ -1,8 +1,9 @@
 import {React, useState, useEffect} from "react";
 import styles from "./App.module.scss";
 import BookList from "./containers/BookList";
-import NavBar from "./containers/NavBar/NavBar";
+import NavBar from "./components/NavBar/NavBar";
 import SearchBar from "./components/SearchBar/SearchBar";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 	const [books, setBooks] = useState([]);
@@ -47,6 +48,7 @@ function App() {
 				handleKeyPress={handleEnterKey}
 			/>
 			<BookList books={books} />
+			<Footer />
 		</div>
 	);
 }
