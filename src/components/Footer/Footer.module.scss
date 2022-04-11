@@ -2,11 +2,11 @@
 @import "./../../assets/fonts.scss";
 
 .Footer {
-  position: absolute;
   font-size: 12px;
   bottom: 15px;
   font-family: $sans-serif;
   color: $light-green;
+  margin: 25px;
 
   a {
     color: $light-green;
