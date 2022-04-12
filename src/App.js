@@ -40,14 +40,16 @@ function App() {
 
 	return (
 		<div className={styles.Container}>
-			<NavBar />
-			<SearchBar
-				setSearch={setSearch}
-				search={search}
-				toggleInput={handleClick}
-				handleKeyPress={handleEnterKey}
-			/>
-			<BookList books={books} />
+			<div className={styles.Container__Page}>
+				<NavBar />
+				<SearchBar
+					setSearch={setSearch}
+					search={search}
+					toggleInput={handleClick}
+					handleKeyPress={handleEnterKey}
+				/>
+				<BookList books={books} />
+			</div>
 			<Footer />
 		</div>
 	);

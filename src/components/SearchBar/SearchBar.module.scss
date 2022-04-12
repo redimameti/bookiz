@@ -2,43 +2,44 @@
 @import "./../../assets/fonts.scss";
 
 .SearchBar {
-  display: flex;
-  align-content: center;
-  
-  &__Input {
-    width: 80vw;
-    max-width: 500px;
-    margin-bottom: 25px;
-    height: 50px;
-    padding: 0px;
-    border: 0px;
-    border-radius: 15px;
-    color: $dark;
-    font-size: 1em;
-    text-indent: 15px;
-    outline: 0;
-  }
+	display: flex;
+	align-content: center;
+	margin-bottom: 25px;
 
-  &__Input::placeholder {
-    font-family: $sans-serif;
-    color: $grey;
-    text-indent: 15px;
-    font-size: 1em;
-  }
+	&__Input {
+		width: 80vw;
+		max-width: 500px;
+		margin-bottom: 25px;
+		height: 50px;
+		padding: 0px;
+		border: 0px;
+		border-radius: 15px;
+		color: $dark;
+		font-size: 1em;
+		text-indent: 15px;
+		outline: 0;
+	}
 
-  &__Submit {
-    height: 45px;
-    width: 50px;
-    margin-left: -55px;
-    margin-top: 2.5px;
-    cursor: pointer;
-    background-color: $light;
-    color: $grey;
-    border: none;
-    border-radius: 15px;
-  }
+	&__Input::placeholder {
+		font-family: $sans-serif;
+		color: $grey;
+		text-indent: 15px;
+		font-size: 1em;
+	}
 
-  &__Submit:hover {
-    color: $dark-grey;
-  }
+	&__Submit {
+		height: 45px;
+		width: 50px;
+		margin-left: -55px;
+		margin-top: 2.5px;
+		cursor: pointer;
+		background-color: $light;
+		color: $grey;
+		border: none;
+		border-radius: 15px;
+	}
+
+	&__Submit:hover {
+		color: $dark-grey;
+	}
 }

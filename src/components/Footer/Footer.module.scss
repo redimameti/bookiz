@@ -3,11 +3,12 @@
 
 .Footer {
   font-size: 12px;
-  bottom: 15px;
   font-family: $sans-serif;
   color: $light-green;
-  margin: 25px;
-
+  padding-bottom: 25px;
+  text-align: center;
+  // bottom: 0px;
+  width: 100%;
   a {
     color: $light-green;
   }
