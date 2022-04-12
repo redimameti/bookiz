@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bookiz/static/css/main.793e39f8.css",
+    "main.js": "/bookiz/static/js/main.5f7c0e14.js",
+    "index.html": "/bookiz/index.html",
+    "main.793e39f8.css.map": "/bookiz/static/css/main.793e39f8.css.map",
+    "main.5f7c0e14.js.map": "/bookiz/static/js/main.5f7c0e14.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.793e39f8.css",
+    "static/js/main.5f7c0e14.js"
+  ]
+}
